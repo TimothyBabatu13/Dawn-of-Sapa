@@ -16,7 +16,7 @@ ul{
 a{
     text-decoration: none;
 }
-#small{
+#small, #small-screen-size{
     display: none;
 }
 .img-fluid{
@@ -24,9 +24,6 @@ a{
 }
 .d-flex{
     display: flex;
-}
-#small-screen-size{
-    display: none;
 }
 .container{
     width: 90%;
@@ -54,6 +51,9 @@ header ul li a{
     border-radius: 10px;
     padding: 12px 20px;
 }
+#login, #login:hover, #signup, #signup:hover{
+    border: 1px solid #00545F;
+}
 #login{
     border-radius: 10px;
     background: #00545F;
@@ -62,24 +62,19 @@ header ul li a{
     padding: 10px;
     transition: all .5s;
     padding: 12px 20px;
-    border: 1px solid #00545F;
 }
-#login:hover{
-    
+#login:hover{   
     background: red;
     background: #EBFFB7;
     color: #00545F;
-    border: 1px solid #00545F;
 }
 #signup{
     border-radius: 15px;
     color: #00545F;
-    border: 1px solid #00545F;
     transition: all .5s;
 }
 #signup:hover{
     color: #fff;
-    border: 1px solid #00545F;
     background: #00545F;
 }
 .center{
@@ -289,16 +284,20 @@ div.ul ul{
         background-repeat: no-repeat;
         height: 60vh;
         margin-left: 0;
-        width: 90%;
+        width: 100%;
         margin: auto;
         transition: all .5s;
         transition-property: margin;
+        padding: 0 30px;
+    }
+    .hero--text{
+        width: 70%;
+        margin: 0 auto;
     }
     .hero--margin{
         margin-top: 70px;
     }
-    .hero img{
-        width: 50%;
+    .hero img, .hero--img{
         display: none;
     }
     .hero h1{
